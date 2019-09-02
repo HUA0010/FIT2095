@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <style>
+            table,th,td {
+                border: 1px solid black;
+            }
+        </style>
+    </head>
+    <body>
+        <h1> Welcome  <%= customer%> </h1>
+        <h3>
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <th>Due Date</th>
+                    <th>Description</th>
+                </tr>
+                <% for ( var i =0; i < stuDb.length;i++){ %>
+                    <tr>
+                        <td>
+                            <%= stuDb[i].name %>
+                        </td>
+                        <td>
+                            <%= stuDb[i].dueDate %>
+                        </td>
+                        <td>
+                            <%= stuDb[i].desc %>
+                        </td>
+                        
+                    </tr>
+                    <% }%>
+        </h3>
+        <a href="/" >Home</a>
+        <a href="addNewTask" class="addTask">Add new tasks</a><br/>
+    </body>
+</html>

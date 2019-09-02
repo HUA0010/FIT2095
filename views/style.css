@@ -1,0 +1,5 @@
+body {
+    background-color: bisque;
+}
+.addTask { font-size: 100px;  margin-right: 1em}
+.listTask { font-size: 100px;  margin-right: 1em}
